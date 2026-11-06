@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Modern Mind since 1926 — Survey of Volumes XII–XVI</title>
+<meta name="description" content="A centenary survey of John Herman Randall Jr.'s The Making of the Modern Mind. Volumes XII–XVI: 163 candidate works across philosophy, human and social sciences, natural sciences, and social ideals and reform.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@atilabayat">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+--paper:#f6f5f2;--card:#fffefc;--ink:#14161b;--text:#2a2d35;--body:#4b4f59;--dim:#82868f;
+--rule:#e3e1da;--rule2:#c9c6bb;
+--indigo:#2f4b7c;--bronze:#8a6a24;--oxblood:#9a2f2f;--moss:#3d6152;
+--phil:#5a3d8a;--hum:#1d6f8a;--nat:#3d7a2a;--soc:#a3471f;
+--serif:'Spectral',Georgia,serif;--sans:'IBM Plex Sans',system-ui,sans-serif;--mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+:root[data-theme="dark"]{
+--paper:#0f1116;--card:#161a21;--ink:#eceef2;--text:#d3d6dd;--body:#aeb3bd;--dim:#7b808b;
+--rule:#242832;--rule2:#39404c;
+--indigo:#8fb0e6;--bronze:#d3a751;--oxblood:#e08585;--moss:#7fb9a1;
+--phil:#b79ae0;--hum:#7fcbe2;--nat:#9fd88c;--soc:#f0a27d;
+}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]):not([data-theme="dark"]){
+--paper:#0f1116;--card:#161a21;--ink:#eceef2;--text:#d3d6dd;--body:#aeb3bd;--dim:#7b808b;
+--rule:#242832;--rule2:#39404c;
+--indigo:#8fb0e6;--bronze:#d3a751;--oxblood:#e08585;--moss:#7fb9a1;
+--phil:#b79ae0;--hum:#7fcbe2;--nat:#9fd88c;--soc:#f0a27d;
+}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--text);font:400 16px/1.62 var(--serif);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--indigo);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 28px}
+@media(max-width:640px){.wrap{padding:0 16px}}
+
+.top{padding:48px 0 28px;border-bottom:1px solid var(--rule2)}
+.kicker{font:500 10.5px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--bronze);margin-bottom:16px}
+h1{font:600 clamp(30px,4.2vw,46px)/1.06 var(--serif);color:var(--ink);letter-spacing:-.02em;text-wrap:balance}
+h1 .sub{display:block;font-size:.42em;font-weight:400;color:var(--body);letter-spacing:0;margin-top:14px;line-height:1.4;font-style:italic}
+.lede{max-width:72ch;margin-top:18px;color:var(--body);font:300 17px/1.62 var(--serif)}
+.lede b{font-weight:600;color:var(--ink)}
+.stats{display:flex;flex-wrap:wrap;gap:0;margin-top:24px;border-top:1px solid var(--rule);padding-top:16px}
+.stat{padding-right:26px;margin-right:26px;border-right:1px solid var(--rule)}
+.stat:last-child{border:0;padding-right:0;margin-right:0}
+.stat b{display:block;font:500 22px/1 var(--mono);color:var(--ink);font-variant-numeric:tabular-nums}
+.stat span{display:block;margin-top:5px;font:400 9.5px/1.2 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.attrib{font:400 12.5px/1.5 var(--sans);color:var(--dim);margin-top:18px;padding-top:14px;border-top:1px solid var(--rule)}
+.attrib b{color:var(--body);font-weight:500}
+
+.nav{position:sticky;top:0;z-index:40;background:var(--paper);border-bottom:1px solid var(--rule)}
+.nav-in{display:flex;align-items:center;gap:2px;overflow-x:auto;scrollbar-width:none;padding:0}
+.nav-in::-webkit-scrollbar{display:none}
+.nav a{flex:0 0 auto;font:500 12px/1 var(--sans);color:var(--body);text-decoration:none;padding:15px 13px;border-bottom:2px solid transparent;transition:color .15s,border-color .15s;white-space:nowrap;cursor:pointer}
+.nav a:hover{color:var(--ink)}
+.nav a.active{color:var(--ink);border-bottom-color:var(--ink)}
+.nav .n{font-family:var(--mono);color:var(--indigo);margin-right:5px;font-weight:600}
+.nav .spacer{flex:1 1 auto}
+.nav .theme{flex:0 0 auto;width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--rule2);background:var(--card);border-radius:3px;color:var(--body);cursor:pointer;margin:8px 0 8px 10px}
+.nav .theme:hover{border-color:var(--indigo);color:var(--ink)}
+.nav .theme svg{width:15px;height:15px;pointer-events:none}
+
+.section{padding:44px 0}
+.intro{background:var(--card);border:1px solid var(--rule);border-left:3px solid var(--indigo);border-radius:4px;padding:22px 24px}
+.intro p{font:400 15px/1.62 var(--serif);color:var(--body);max-width:82ch}
+.intro p+p{margin-top:10px}
+.intro b{color:var(--ink)}
+.tabs{display:flex;gap:0;flex-wrap:wrap;border-bottom:1px solid var(--rule2);margin-top:26px}
+.tab{font:500 12.5px/1 var(--sans);padding:13px 18px;border:0;background:transparent;color:var(--body);cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;white-space:nowrap;display:flex;align-items:center;gap:7px}
+.tab:hover{color:var(--ink)}
+.tab.active{color:var(--ink);border-bottom-color:var(--ink);font-weight:600}
+.tab .tn{font-family:var(--mono);color:var(--indigo);font-weight:600}
+.tab.active .tn{color:var(--ink)}
+.panel{display:none;padding-top:26px}
+.panel.active{display:block}
+.panel .head{display:flex;align-items:baseline;gap:18px;border-bottom:1px solid var(--rule);padding-bottom:14px}
+.panel .num{font:600 42px/1 var(--serif);color:var(--indigo);min-width:2em;letter-spacing:-.02em}
+.panel .head h2{font:600 26px/1.18 var(--serif);color:var(--ink);letter-spacing:-.012em;text-wrap:balance}
+.panel .years{font:400 12px/1.5 var(--mono);color:var(--dim);margin-top:5px}
+.q{max-width:82ch;margin:20px 0 0;font:400 16.5px/1.62 var(--serif);color:var(--text)}
+.q b{color:var(--ink)}
+h3.sh{font:600 12px/1.4 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--dim);margin:30px 0 10px}
+.sections{margin:0;padding-left:1.4em;display:grid;gap:8px;max-width:86ch}
+.sections li{font:400 15.5px/1.58 var(--serif);padding-left:3px}
+.sections b{color:var(--ink);font-weight:600}
+.tw{overflow-x:auto;border:1px solid var(--rule);border-radius:3px;max-height:600px;overflow-y:auto;background:var(--card)}
+table{border-collapse:collapse;width:100%;font:400 12.5px/1.45 var(--sans);min-width:780px}
+thead{position:sticky;top:0;z-index:2}
+th{text-align:left;font-weight:600;color:var(--dim);background:var(--paper);padding:9px 10px;border-bottom:1px solid var(--rule2);white-space:nowrap;font-size:11px;letter-spacing:.05em;text-transform:uppercase}
+td{padding:8px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+td cite{font:italic 400 13px/1.4 var(--serif)}
+td.det{font-size:11px;color:var(--dim);word-break:break-word;max-width:300px}
+td.det a{color:var(--indigo);font-family:var(--mono);font-size:10.5px;text-decoration:none}
+td.det a:hover{text-decoration:underline}
+.st{font-weight:600;font-size:11.5px;white-space:nowrap}
+.st-phil{color:var(--phil)}.st-hum{color:var(--hum)}.st-nat{color:var(--nat)}.st-soc{color:var(--soc)}
+.pill{display:inline-block;padding:2px 8px;border-radius:999px;font-size:10.5px;font-weight:600;white-space:nowrap}
+.p-ok{background:rgba(61,97,82,.12);color:var(--moss)}
+.p-chk{background:rgba(138,106,36,.13);color:var(--bronze)}
+.p-no{background:rgba(154,47,47,.1);color:var(--oxblood)}
+.p-in{background:rgba(47,75,124,.1);color:var(--indigo)}
+:root[data-theme="dark"] .p-ok{background:rgba(127,185,161,.15)}
+:root[data-theme="dark"] .p-chk{background:rgba(211,167,81,.15)}
+:root[data-theme="dark"] .p-no{background:rgba(224,133,133,.13)}
+:root[data-theme="dark"] .p-in{background:rgba(143,176,230,.13)}
+ul.search{margin:0;padding-left:1.2em;columns:2 300px;column-gap:32px;font-size:15px}
+ul.search li{break-inside:avoid;margin-bottom:5px;font-family:var(--serif)}
+details.xr{margin-top:24px;border-top:1px solid var(--rule);padding-top:14px}
+details.xr summary{cursor:pointer;font:600 14px var(--sans);color:var(--indigo);list-style:none;display:flex;align-items:center;gap:8px}
+details.xr summary::-webkit-details-marker{display:none}
+details.xr summary::before{content:"\25B8";font-size:11px;transition:transform .15s}
+details.xr[open] summary::before{transform:rotate(90deg)}
+details.xr summary span{font-weight:400;color:var(--dim);margin-left:4px}
+details.xr p{font:400 13.5px/1.6 var(--sans);color:var(--dim);margin-top:12px;font-style:italic;padding:14px 16px;border:1px dashed var(--rule2);border-radius:3px;background:var(--card);max-width:80ch}
+
+footer{border-top:2px solid var(--ink);padding:36px 0 56px;margin-top:20px}
+.fg{display:grid;grid-template-columns:1.6fr 1fr;gap:44px}
+@media(max-width:760px){.fg{grid-template-columns:1fr;gap:26px}}
+.fg h3{font:600 17px/1.3 var(--serif);color:var(--ink);margin-bottom:10px}
+.fg p{font:400 13px/1.65 var(--sans);color:var(--dim);max-width:62ch}
+.fg p+p{margin-top:10px}
+.fg .credit{font:400 12px/1.6 var(--sans);color:var(--dim);margin-top:14px;padding-top:14px;border-top:1px solid var(--rule)}
+.fg .credit b{color:var(--body);font-weight:500}
+.share{background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:20px}
+.share h4{font:600 11.5px/1.4 var(--sans);letter-spacing:.07em;text-transform:uppercase;color:var(--dim);margin-bottom:12px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;font:500 12.5px/1 var(--sans);padding:11px 14px;border-radius:3px;border:1px solid var(--rule2);background:var(--card);color:var(--ink);cursor:pointer;text-decoration:none;width:100%;margin-top:8px;transition:border-color .15s}
+.btn:hover{border-color:var(--indigo)}
+.btn.primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn.primary:hover{background:var(--indigo);border-color:var(--indigo)}
+.btn svg{width:14px;height:14px;flex:0 0 auto;pointer-events:none}
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--ink);color:var(--paper);font:500 13px/1 var(--sans);padding:11px 18px;border-radius:3px;opacity:0;transition:all .25s;z-index:100;pointer-events:none}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+</style>
+</head>
+<body>
+
+<header class="top">
+<div class="wrap">
+<p class="kicker">1926–2026 · A Centenary Celebration · Humanities Research Digest</p>
+<h1>The Modern Mind since 1926
+<span class="sub">A 16-volume commemoration of John Herman Randall Jr.'s <em>The Making of the Modern Mind</em> — first published 1926, revised 1940. Survey of volumes XII–XVI.</span>
+</h1>
+<p class="lede"><b>163 candidate works. 5 volumes. One continuous inquiry.</b> Each volume weighs philosophy and the human and social sciences alongside the natural sciences, and gives one section to social ideals and reform — from the family and the classroom to the city, the nation and the world. Every candidate below was checked once by title against Crossref; no identifier was recalled from memory.</p>
+<div class="stats">
+<div class="stat"><b>163</b><span>Candidates</span></div>
+<div class="stat"><b>103</b><span>Found in Crossref</span></div>
+<div class="stat"><b>63</b><span>Need checking</span></div>
+<div class="stat"><b>399</b><span>Cross-references</span></div>
+</div>
+<p class="attrib"><b>Selected and edited by Atila Bayat</b> · ADA AI Labs – Alpha Data Architects · 28 October 2026</p>
+</div>
+</header>
+
+<nav class="nav" aria-label="Volume tabs">
+<div class="wrap">
+<div class="nav-in">
+<a data-vol="XII" class="active"><span class="n">XII</span>Between the Wars</a>
+<a data-vol="XIII"><span class="n">XIII</span>War &amp; Totalitarianism</a>
+<a data-vol="XIV"><span class="n">XIV</span>Postwar Sciences</a>
+<a data-vol="XV"><span class="n">XV</span>Theory &amp; Discontents</a>
+<a data-vol="XVI"><span class="n">XVI</span>Globalisation</a>
+<div class="spacer"></div>
+<button class="theme" id="themeBtn" type="button" title="Switch theme" aria-label="Switch theme"><svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+</div>
+</div>
+</nav>
+
+<section class="section">
+<div class="wrap">
+<div class="intro">
+<p><b>A systematic review of candidates.</b> Each candidate was checked once by title against Crossref. A status of <span class="pill p-ok">Found</span> means a record whose title matches; <span class="pill p-chk">Check</span> means the matching record is a later edition, a reprint or an uncertain match; <span class="pill p-no">Not found</span> means no matching record in the first pass; <span class="pill p-in">In series</span> means the DOI is already in the shared register of the two series.</p>
+<p><b>Why this period.</b> 38 of 1,447 digest entries were first published between the 1920s and the 1950s, against 1,221 from the 1990s on. The period between the wars needs new sourcing more than any other. Another <b>399 entries</b> already in the two series touch these themes and are cross-referenced by author, not repeated — counts appear below each volume's table; the full lists are in the source planning document.</p>
+</div>
+<div class="tabs" role="tablist" id="surveyTabs"></div>
+<div id="surveyPanels"></div>
+</div>
+</section>
+
+<footer>
+<div class="wrap">
+<div class="fg">
+<div>
+<h3>Share the centenary</h3>
+<p>A 16-volume commemoration of John Herman Randall Jr.'s <em>The Making of the Modern Mind</em> (1926), with a systematic survey of the decades since. Built for readers, students and researchers who want the argument and the evidence in one place.</p>
+<p class="credit"><b>Selected and edited by Atila Bayat</b> · ADA AI Labs – Alpha Data Architects · <span style="font-family:var(--mono);font-size:11px">28 October 2026</span></p>
+</div>
+<div class="share">
+<h4>For your followers</h4>
+<button class="btn primary" onclick="shareTwitter()" type="button"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.1 8.1L23.2 22h-6.5l-5.1-6.6L5.8 22H2.7l7.6-8.7L1.6 2h6.7l4.6 6.1L18.9 2zm-1.1 18h1.7L6.9 3.8H5.1L17.8 20z"/></svg>Post to Twitter / X</button>
+<button class="btn" onclick="copyLink()" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>Copy link</button>
+</div>
+</div>
+</div>
+</footer>
+
+<div class="toast" id="toast">Link copied</div>
+
+<script>
+var WORKS = {
+XII:[
+['Philosophy','1927','Heidegger','Being and Time','Check','10.2307/jj.37784134','ed.2026'],
+['Philosophy','1928','Carnap','Der logische Aufbau der Welt','Not found','',''],
+['Philosophy','1929','Dewey','The Quest for Certainty','Not found','',''],
+['Philosophy','1929','Whitehead','Process and Reality','Not found','',''],
+['Philosophy','1934','Popper','The Logic of Scientific Discovery','In series','','Already in Replication & Self-Correction'],
+['Philosophy','1936','Ayer','Language, Truth and Logic','Not found','',''],
+['Philosophy','1936','Husserl','The Crisis of European Sciences and Transcendental Phenomenology','Not found','',''],
+['Philosophy','1940','Collingwood','An Essay on Metaphysics','Not found','',''],
+['Philosophy','1990','Galison','Aufbau/Bauhaus: logical positivism and architectural modernism','Found','10.1086/448557',''],
+['Philosophy','2000','Friedman','A Parting of the Ways: Carnap, Cassirer, and Heidegger','Not found','',''],
+['Human','1927','Dewey','The Public and Its Problems','Not found','',''],
+['Human','1929','Mannheim','Ideology and Utopia','Check','10.4324/9781315002828','ed.2013'],
+['Human','1932','Bartlett','Remembering: A Study in Experimental and Social Psychology','Not found','',''],
+['Human','1934','Benedict','Patterns of Culture','Check','10.4324/9780429054419','ed.2019'],
+['Human','1934','Vygotsky','Thought and Language','Check','10.1037/11193-000','ed.1962'],
+['Human','1936','Keynes','The General Theory of Employment, Interest and Money','Check','10.1007/978-3-319-70344-2','ed.2018'],
+['Human','1937','Horkheimer','Traditional and critical theory','Not found','',''],
+['Human','1938','Merton','Social structure and anomie','Check','10.4324/9781351157803-1','ed.2017'],
+['Human','1939','Elias','The Civilizing Process','Not found','',''],
+['Human','1983','Freeman','Margaret Mead and Samoa: The Making and Unmaking of an Anthropological Myth','Not found','',''],
+['Human','2011','Levitt List','Was there really a Hawthorne effect at the Hawthorne plant? An analysis of the original illumination experiments','Check','10.3386/w15016','uncertain title match'],
+['Natural','1927','Heisenberg','Uber den anschaulichen Inhalt der quantentheoretischen Kinematik und Mechanik','Check','10.1007/978-3-642-61659-4_30','ed.1985'],
+['Natural','1929','Hubble','A relation between distance and radial velocity among extra-galactic nebulae','Found','10.1073/pnas.15.3.168',''],
+['Natural','1930','Fisher','The Genetical Theory of Natural Selection','Found','10.5962/bhl.title.27468',''],
+['Natural','1935','Einstein Podolsky Rosen','Can quantum-mechanical description of physical reality be considered complete?','Found','10.1103/physrev.47.777',''],
+['Natural','1936','Turing','On computable numbers, with an application to the Entscheidungsproblem','Check','10.1016/b978-0-08-009217-1.50024-4','ed.1960'],
+['Natural','1937','Dobzhansky','Genetics and the Origin of Species','Not found','',''],
+['Natural','1971','Forman','Weimar culture, causality, and quantum theory 1918-1927','Check','10.1142/9789814293129_0006','ed.2011'],
+['Reform','1930','Freud','Civilization and Its Discontents','Not found','','Individual'],
+['Reform','1935','Dewey','Liberalism and Social Action','Not found','','Nation'],
+['Reform','1992','Skocpol','Protecting Soldiers and Mothers: The Political Origins of Social Policy in the United States','Not found','','Nation, family'],
+['Reform','1998','Rodgers','Atlantic Crossings: Social Politics in a Progressive Age','Not found','','Transatlantic'],
+['Reform','2008','Lombardo','Three Generations, No Imbeciles: Eugenics, the Supreme Court, and Buck v. Bell','Not found','','Family & body'],
+['Reform','2013','Katznelson','Fear Itself: The New Deal and the Origins of Our Time','Not found','','Nation']
+],
+XIII:[
+['Philosophy','1945','Popper','The Open Society and Its Enemies','Check','10.4324/9780203995167','ed.2005'],
+['Philosophy','1945','Merleau-Ponty','Phenomenology of Perception','Check','10.4324/9780203994610','ed.2002'],
+['Philosophy','1945','Hayek','The use of knowledge in society','Check','10.1016/b978-0-7506-9749-1.50005-3','ed.1996'],
+['Philosophy','1949','Beauvoir','The Second Sex','Not found','',''],
+['Philosophy','1949','Ryle','The Concept of Mind','Check','10.4324/9780203875858','ed.2009'],
+['Philosophy','1951','Quine','Two dogmas of empiricism','Check','10.2307/j.ctvcm4fzv.17','ed.2011'],
+['Philosophy','1953','Wittgenstein','Philosophical Investigations','Not found','',''],
+['Philosophy','1958','Arendt','The Human Condition','Check','10.7208/chicago/9780226924571.001.0001','ed.1998'],
+['Philosophy','1958','Berlin','Two concepts of liberty','Check','10.1093/019924989x.003.0004','ed.2002'],
+['Human','1943','McCulloch Pitts','A logical calculus of the ideas immanent in nervous activity','Check','10.1016/s0092-8240(05)80006-0','ed.1990'],
+['Human','1944','Myrdal','An American Dilemma: The Negro Problem and Modern Democracy','Not found','',''],
+['Human','1944','von Neumann Morgenstern','Theory of Games and Economic Behavior','Check','10.1515/9781400829460','ed.2007'],
+['Human','1948','Shannon','A mathematical theory of communication','Found','10.1002/j.1538-7305.1948.tb01338.x',''],
+['Human','1948','Wiener','Cybernetics: or Control and Communication in the Animal and the Machine','Check','10.7551/mitpress/11810.001.0001','ed.2019'],
+['Human','1949','Levi-Strauss','The Elementary Structures of Kinship','Check','10.5406/illinois/9780252039003.003.0007','ed.2017; uncertain'],
+['Human','1950','Adorno','The Authoritarian Personality','Not found','',''],
+['Human','1950','Riesman','The Lonely Crowd','Check','10.12987/9780300174144','ed.2017'],
+['Human','1951','Parsons','The Social System','Check','10.4324/9780203992951','ed.2013'],
+['Human','1951','Arrow','Social Choice and Individual Values','Check','10.12987/9780300186987','ed.2017'],
+['Human','1955','Kuznets','Economic growth and income inequality','Check','10.4324/9780429311208-4','ed.2019'],
+['Human','1956','Asch','Studies of independence and conformity: a minority of one against a unanimous majority','Found','10.1037/h0093718',''],
+['Natural','1944','Schrodinger','What Is Life?','Check','10.1017/cbo9781107295629','ed.2012'],
+['Natural','1944','Avery','Studies on the chemical nature of the substance inducing transformation of pneumococcal types','Found','10.1084/jem.83.2.97',''],
+['Natural','1945','Bush','Science, the Endless Frontier','Check','10.1515/9780691201658','ed.2020'],
+['Natural','1953','Watson Crick','Molecular structure of nucleic acids: a structure for deoxyribose nucleic acid','Check','10.1038/248765a0','ed.1974'],
+['Natural','1953','Miller','A production of amino acids under possible primitive earth conditions','Found','10.1126/science.117.3046.528',''],
+['Natural','1959','Snow','The Two Cultures','Check','10.1017/cbo9780511819940','ed.1993'],
+['Reform','1944','Hayek','The Road to Serfdom','Check','10.4324/9780203991718','Nation · ed.1976'],
+['Reform','1947','Clark Clark','Racial identification and preference in Negro children','Check','10.2307/2966491','Child & school · ed.1950; uncertain'],
+['Reform','1950','Marshall','Citizenship and Social Class','Check','10.2307/j.ctt18mvns1','Nation · ed.1987'],
+['Reform','1954','Lewis','Economic development with unlimited supplies of labour','Found','10.1111/j.1467-9957.1954.tb00021.x','Developing economy'],
+['Reform','1961','Fanon','The Wretched of the Earth','Not found','','Colony'],
+['Reform','1999','Morsink','The Universal Declaration of Human Rights: Origins, Drafting, and Intent','Check','10.2307/j.ctv8xngcp','World · ed.2019; uncertain'],
+['Reform','2009','Mazower','No Enchanted Palace: The End of Empire and the Ideological Origins of the United Nations','Not found','','World']
+],
+XIV:[
+['Philosophy','1958','Winch','The Idea of a Social Science and its Relation to Philosophy','Check','10.4324/9780203820766','ed.2015'],
+['Philosophy','1960','Gadamer','Truth and Method','Not found','',''],
+['Philosophy','1961','Hart','The Concept of Law','Check','10.1093/he/9780199644704.001.0001','ed.2012'],
+['Philosophy','1962','Habermas','The Structural Transformation of the Public Sphere','Not found','',''],
+['Philosophy','1963','Davidson','Actions, reasons, and causes','Check','10.1093/0199246270.003.0001','ed.2001'],
+['Philosophy','1971','Taylor','Interpretation and the sciences of man','Found','10.1017/cbo9781139173490.002',''],
+['Philosophy','1972','Singer','Famine, affluence, and morality','Check','10.4324/9781315254210-1','ed.2017'],
+['Philosophy','1974','Nozick','Anarchy, State, and Utopia','Not found','',''],
+['Philosophy','1975','Putnam','The meaning of meaning','Not found','',''],
+['Philosophy','1975','Feyerabend','Against Method','Check','10.7208/chicago/9780226467030.001.0001','ed.1999; uncertain'],
+['Human','1955','Simon','A behavioral model of rational choice','Check','10.2307/jj.35529187.7','ed.2010'],
+['Human','1956','Miller','The magical number seven, plus or minus two','Check','10.1525/9780520318267-011','ed.1966'],
+['Human','1956','Solow','A contribution to the theory of economic growth','Found','10.2307/1884513',''],
+['Human','1957','Festinger','A Theory of Cognitive Dissonance','Found','10.1515/9781503620766',''],
+['Human','1959','Goffman','The Presentation of Self in Everyday Life','Not found','',''],
+['Human','1959','Lipset','Some social requisites of democracy: economic development and political legitimacy','Found','10.2307/1951731',''],
+['Human','1963','Milgram','Behavioral study of obedience','Found','10.1037/h0040525',''],
+['Human','1965','Olson','The Logic of Collective Action','Found','10.4159/9780674041660',''],
+['Human','1966','Berger Luckmann','The Social Construction of Reality','Not found','',''],
+['Human','1966','Foucault','The Order of Things','Check','10.4324/9780203996645','ed.2005'],
+['Human','1973','Geertz','The Interpretation of Cultures','Not found','',''],
+['Human','1974','Tversky Kahneman','Judgment under uncertainty: heuristics and biases','Check','10.1017/cbo9780511809477.002','ed.1982'],
+['Natural','1963','Lorenz','Deterministic nonperiodic flow','Check','10.1201/9780203734636-38','ed.2017'],
+['Natural','1963','Vine Matthews','Magnetic anomalies over oceanic ridges','Found','10.1038/199947a0',''],
+['Natural','1964','Hamilton','The genetical evolution of social behaviour','Found','10.1016/0022-5193(64)90038-4',''],
+['Natural','1965','Penzias Wilson','A measurement of excess antenna temperature at 4080 Mc/s','Found','10.1086/148307',''],
+['Natural','1970','Monod','Chance and Necessity','Not found','',''],
+['Natural','1975','Wilson','Sociobiology: The New Synthesis','Not found','',''],
+['Reform','1960','Rostow','The Stages of Economic Growth: A Non-Communist Manifesto','Not found','','Developing world'],
+['Reform','1961','Jacobs','The Death and Life of Great American Cities','Not found','','City'],
+['Reform','1962','Harrington','The Other America','Not found','','Nation'],
+['Reform','1963','Friedan','The Feminine Mystique','Not found','','Home'],
+['Reform','1964','Marcuse','One-Dimensional Man','Check','10.4324/9780203995211','Society · ed.2013'],
+['Reform','1966','Coleman','Equality of Educational Opportunity','Not found','','School'],
+['Reform','1968','Hardin','The tragedy of the commons','Check','10.4324/9780429493744-5','Commons · ed.2018'],
+['Reform','1970','Freire','Pedagogy of the Oppressed','Check','10.5040/9781350190238','Classroom · ed.2021; uncertain']
+],
+XV:[
+['Philosophy','1975','Foucault','Discipline and Punish','Not found','',''],
+['Philosophy','1979','Rorty','Philosophy and the Mirror of Nature','Check','10.2307/j.ctvc77b6z','ed.2008'],
+['Philosophy','1979','Sen','Equality of what?','Check','10.1093/0198289286.003.0002','ed.1995'],
+['Philosophy','1981','Habermas','The Theory of Communicative Action','Not found','',''],
+['Philosophy','1982','Sandel','Liberalism and the Limits of Justice','Check','10.1017/cbo9780511810152','ed.1998'],
+['Philosophy','1982','Gilligan','In a Different Voice','In series','','Already in Moral Judgment'],
+['Philosophy','1983','Hacking','Representing and Intervening','Found','10.1017/cbo9780511814563',''],
+['Philosophy','1984','Parfit','Reasons and Persons','Found','10.1093/019824908x.001.0001',''],
+['Philosophy','1988','Haraway','Situated knowledges: the science question in feminism and the privilege of partial perspective','Found','10.2307/3178066',''],
+['Philosophy','1995','Kymlicka','Multicultural Citizenship','Found','10.1093/0198290918.001.0001',''],
+['Human','1979','Skocpol','States and Social Revolutions','Check','10.1017/cbo9781316423998','ed.2015'],
+['Human','1979','Kahneman Tversky','Prospect theory: an analysis of decision under risk','Check','10.1017/cbo9780511803475.003','ed.2000'],
+['Human','1981','Axelrod Hamilton','The evolution of cooperation','Found','10.1126/science.7466396',''],
+['Human','1983','Anderson','Imagined Communities','Not found','',''],
+['Human','1983','Gellner','Nations and Nationalism','Not found','',''],
+['Human','1983','Hobsbawm Ranger','The Invention of Tradition','Not found','',''],
+['Human','1985','Scott','Weapons of the Weak','Check','10.12987/9780300153620','ed.2017'],
+['Human','1986','Scott','Gender: a useful category of historical analysis','Found','10.2307/1864376',''],
+['Human','1988','Spivak','Can the subaltern speak?','Check','10.4324/9781003101437-6','ed.2023'],
+['Human','1990','North','Institutions, Institutional Change and Economic Performance','Found','10.1017/cbo9780511808678',''],
+['Human','1990','Ostrom','Governing the Commons','Check','10.1017/cbo9781316423936','ed.2015'],
+['Human','1993','Putnam','Making Democracy Work','Found','10.2307/j.ctt7s8r7',''],
+['Natural','1967','Mandelbrot','How long is the coast of Britain?','Found','10.1126/science.156.3775.636',''],
+['Natural','1974','Molina Rowland','Stratospheric sink for chlorofluoromethanes: chlorine atom-catalysed destruction of ozone','Found','10.1038/249810a0',''],
+['Natural','1976','Bloor','Knowledge and Social Imagery','Not found','',''],
+['Natural','1988','Hansen','Global climate changes as forecast by Goddard Institute for Space Studies three-dimensional model','Found','10.1029/jd093id08p09341',''],
+['Reform','1987','World Commission','Our Common Future','Not found','','World'],
+['Reform','1990','Esping-Andersen','The Three Worlds of Welfare Capitalism','Not found','','Welfare regime'],
+['Reform','1994','Pierson','Dismantling the Welfare State?','Found','10.1017/cbo9780511805288','Nation'],
+['Reform','1999','Sen','Development as Freedom','Not found','','Person & nation'],
+['Reform','2011','Rodgers','Age of Fracture','Found','10.4159/9780674059528','Nation'],
+['Reform','2012','Jones','Masters of the Universe: Hayek, Friedman, and the Birth of Neoliberal Politics','Not found','','Transatlantic']
+],
+XVI:[
+['Philosophy','1992','Habermas','Between Facts and Norms','Check','10.7551/mitpress/1564.001.0001','ed.1996'],
+['Philosophy','1992','Honneth','The Struggle for Recognition','Not found','',''],
+['Philosophy','1993','Rawls','Political Liberalism','Not found','',''],
+['Philosophy','1995','Fraser','From redistribution to recognition? Dilemmas of justice in a post-socialist age','Check','10.1093/oso/9780198782063.003.0021','ed.1998'],
+['Philosophy','2000','Nussbaum','Women and Human Development: The Capabilities Approach','Not found','',''],
+['Philosophy','2002','Pogge','World Poverty and Human Rights','Not found','',''],
+['Philosophy','2009','Sen','The Idea of Justice','Found','10.2307/j.ctvjnrv7n',''],
+['Human','1993','Huntington','The clash of civilizations?','Check','10.4324/9780203092170-30','ed.2014'],
+['Human','1995','Putnam',"Bowling alone: America's declining social capital",'Check','10.4324/9780429261732-19','ed.2020'],
+['Human','1996','Castells','The Rise of the Network Society','Check','10.1002/9781444319514','ed.2009'],
+['Human','2001','Acemoglu Johnson Robinson','The colonial origins of comparative development: an empirical investigation','Found','10.3386/w7771',''],
+['Human','2001','Henrich','In search of homo economicus: behavioral experiments in 15 small-scale societies','Found','10.1257/aer.91.2.73',''],
+['Human','2002','Fehr Gachter','Altruistic punishment in humans','Found','10.1038/415137a',''],
+['Human','2004','Bayly','The Birth of the Modern World 1780-1914','Not found','',''],
+['Human','2014','Osterhammel','The Transformation of the World: A Global History of the Nineteenth Century','Found','10.1515/9781400849949',''],
+['Natural','1998','Watts Strogatz','Collective dynamics of small-world networks','Check','10.1515/9781400841356.301','ed.2011'],
+['Natural','1999','Barabasi Albert','Emergence of scaling in random networks','Check','10.1515/9781400841356.349','ed.2011'],
+['Natural','2001','Lander','Initial sequencing and analysis of the human genome','Check','10.1073/pnas.042692499','uncertain title match'],
+['Natural','2002','Crutzen','Geology of mankind','Found','10.1038/415023a',''],
+['Natural','2009','Rockstrom','A safe operating space for humanity','Not found','',''],
+['Natural','2015','LeCun Bengio Hinton','Deep learning','Found','10.1038/nature14539',''],
+['Reform','1999','Lessig','Code and Other Laws of Cyberspace','Not found','','Digital commons'],
+['Reform','2002','Stiglitz','Globalization and Its Discontents','Not found','','World economy'],
+['Reform','2005','Harvey','A Brief History of Neoliberalism','Found','10.1093/oso/9780199283262.001.0001','World economy'],
+['Reform','2006','Benkler','The Wealth of Networks','Check','10.12987/9780300127232','Digital commons · ed.2017'],
+['Reform','2011','Banerjee Duflo','Poor Economics','Not found','','Village & household'],
+['Reform','2015','Banerjee Duflo','Six randomized evaluations of microcredit: introduction and further steps','Found','10.1257/app.20140287','Village & household']
+]
+};
+
+var SURVEY = {
+XII:{short:'Between the Wars',t:'Between the Wars & the 1940 Revision',y:'1926–1940',
+c:'34 candidates · Philosophy 10 · Human & social sciences 11 · Natural sciences 7 · Social ideals & reform 6',
+q:'Did the interwar crisis, of liberal democracy, of the economy and of the old physics, break the nineteenth-century synthesis Randall described in 1926, and what did he himself change when he revised the book in 1940?',
+sec:['<b>Foundations.</b> Randall’s 1926 text against his 1940 revision; the period’s own diagnoses of crisis.','<b>Philosophy: Positivism, Pragmatism &amp; Phenomenology.</b> The Vienna Circle and logical empiricism, Dewey’s instrumentalism and Whitehead’s process metaphysics, Husserl and Heidegger on the crisis of the sciences.','<b>The Human Sciences: Culture, Mind &amp; Society.</b> Boasian culture theory and its critics, Bartlett and Vygotsky on memory and thought, Mannheim’s sociology of knowledge, Elias, Merton, the Hawthorne studies.','<b>The New Physics &amp; the Evolutionary Synthesis.</b> Uncertainty and complementarity, EPR, the expanding universe, Gödel and Turing on the limits of formal systems, Fisher and Dobzhansky.','<b>Crisis &amp; Critique of Reason.</b> Freud’s late cultural theory, the early Frankfurt School, the cultural pessimists, and the Forman thesis on Weimar culture and physics.','<b>Social Ideals &amp; Reform: Planning, Welfare &amp; the New Deal.</b> From the family and the body (eugenic sterilisation, birth control) through the workplace and the city to national welfare states and Keynesian planning, with the Atlantic exchange of reform ideas.'],
+next:['Ambedkar, <em>Annihilation of Caste</em> (1936)','Du Bois, <em>Black Reconstruction</em> (1935)','Woolf, <em>A Room of One’s Own</em> (1929) and <em>Three Guineas</em> (1938)','Benda, <em>The Treason of the Intellectuals</em> (1927)','Ortega y Gasset, <em>The Revolt of the Masses</em> (1930)','Huizinga, <em>In the Shadow of Tomorrow</em> (1935)','Chow Tse-tsung, <em>The May Fourth Movement</em> (1960)','Kloppenberg, <em>Uncertain Victory</em> (1986)','Hughes, <em>Consciousness and Society</em> (1958)','Kotkin, <em>Magnetic Mountain</em> (1995)','Randall’s own 1940 chapters'],
+xrn:39},
+XIII:{short:'War & Totalitarianism',t:'War, Totalitarianism & the Critique of Reason',y:'1939–1960',
+c:'34 candidates · Philosophy 9 · Human & social sciences 12 · Natural sciences 6 · Social ideals & reform 7',
+q:'Did the catastrophe of total war and genocide discredit the modern faith in reason and progress, or did it produce new foundations for it: rights, welfare, science policy and the open society?',
+sec:['<b>Foundations.</b> The war’s intellectual reckonings and the postwar settlement.','<b>Philosophy after Catastrophe.</b> Popper and Berlin on the open society and liberty, Arendt on action and totalitarianism, Beauvoir and Merleau-Ponty, Wittgenstein, Ryle and Quine remaking analytic philosophy.','<b>The Social Sciences of Prejudice &amp; Mass Society.</b> Myrdal, the Authoritarian Personality, Asch on conformity, Riesman, Parsons and Lévi-Strauss.','<b>Information, Cybernetics &amp; the Sciences of Choice.</b> Shannon, Wiener, McCulloch and Pitts, von Neumann and Morgenstern, Arrow, Hayek on knowledge in society.','<b>The Molecular Turn &amp; Big Science.</b> Schrödinger, Avery, Watson and Crick, Miller, Bush’s endless frontier, Snow’s two cultures.','<b>Social Ideals &amp; Reform: Rights, Welfare &amp; Decolonisation.</b> From the child (the Clarks’ doll studies behind <em>Brown</em>) through social citizenship and the welfare state to the Universal Declaration, the United Nations, development economics and the anticolonial revolt.'],
+next:['The Beveridge Report (1942)','Weil, <em>The Need for Roots</em> (1949)','Niebuhr, <em>The Children of Light and the Children of Darkness</em> (1944)','Nehru, <em>The Discovery of India</em> (1946)','Prebisch (1950) on the terms of trade','Mills, <em>The Power Elite</em> (1956)','Braudel, <em>The Mediterranean</em> (1949)','Bloch, <em>The Historian’s Craft</em>','Joravsky, <em>The Lysenko Affair</em> (1970)','Kinsey reports (1948, 1953)','Judt, <em>Postwar</em> (2005)'],
+xrn:34},
+XIV:{short:'Postwar Sciences',t:'The Postwar Sciences of Mind & Society',y:'1950–1975',
+c:'36 candidates · Philosophy 10 · Human & social sciences 12 · Natural sciences 6 · Social ideals & reform 8',
+q:'Could the confident postwar sciences of mind, behaviour and society, cognitive, structural and modernising, explain human beings, and what did the social movements of the 1960s show they had missed?',
+sec:['<b>Foundations.</b> The cognitive revolution, the structuralist moment and modernisation theory.','<b>Philosophy: Language, Interpretation &amp; Justice.</b> Winch and Taylor on the human sciences, Gadamer, Davidson, Putnam, Hart, and the return of normative theory in Singer and Nozick.','<b>The Cognitive Revolution &amp; Behavioural Science.</b> Miller, Simon, Festinger, Milgram, Tversky and Kahneman.','<b>Society, Culture &amp; Modernisation.</b> Goffman, Berger and Luckmann, Geertz, Foucault, Lipset, Olson, Solow and Rostow.','<b>Life, Earth &amp; Cosmos.</b> Hamilton’s inclusive fitness, plate tectonics, chaos, the cosmic background, Monod and sociobiology.','<b>Social Ideals &amp; Reform: Civil Rights, Poverty, Education &amp; Environment.</b> From the classroom (Coleman, Freire) and the home (Friedan) through the city (Jacobs) and the war on poverty (Harrington) to the commons (Hardin) and the New Left’s critique (Marcuse).'],
+next:['King, ‘Letter from Birmingham Jail’ (1963)','Carson, <em>Silent Spring</em> (1962)','The Moynihan Report (1965)','Gutiérrez, <em>A Theology of Liberation</em> (1971)','Cardoso and Faletto, <em>Dependency and Development in Latin America</em> (1969)','Arendt, <em>Eichmann in Jerusalem</em> (1963)','Carr, <em>What Is History?</em> (1961)','Lakatos and Musgrave, <em>Criticism and the Growth of Knowledge</em> (1970)','Illich, <em>Deschooling Society</em> (1971)','Sen, <em>Collective Choice and Social Welfare</em> (1970)'],
+xrn:107},
+XV:{short:'Theory & Discontents',t:'Theory & Its Discontents',y:'1968–1995',
+c:'32 candidates · Philosophy 10 · Human & social sciences 12 · Natural sciences 4 · Social ideals & reform 6',
+q:'When the human sciences turned on their own foundations, through theories of power, gender, the subaltern and the social construction of knowledge, did they deepen the modern mind’s self-understanding or dissolve it?',
+sec:['<b>Foundations.</b> The theory years and their critics.','<b>Philosophy: Justice, Community &amp; the Self.</b> Sen, Sandel, Parfit, Habermas’s communicative action, Rorty, Hacking, Kymlicka.','<b>Theory: Power, Gender &amp; the Subaltern.</b> Foucault on discipline, Joan Scott on gender, Spivak, Haraway’s situated knowledges.','<b>Societies: Nations, States &amp; Institutions.</b> Anderson, Gellner, Hobsbawm and Ranger, Skocpol, Scott’s weapons of the weak, North, Ostrom, Putnam, prospect theory and the evolution of cooperation.','<b>Science, Its Sociologists &amp; the Planet.</b> The strong programme, the ozone hole, climate models, fractals.','<b>Social Ideals &amp; Reform: Welfare States, Neoliberalism &amp; Sustainability.</b> From households and care to welfare regimes and their retrenchment, the neoliberal turn, development as freedom and the Brundtland idea of sustainable development.'],
+next:['Said, <em>Orientalism</em> (1978)','Sen, <em>Poverty and Famines</em> (1981)','Crenshaw, ‘Demarginalizing the Intersection of Race and Sex’ (1989)','Okin, <em>Justice, Gender, and the Family</em> (1989)','Havel, ‘The Power of the Powerless’ (1978)','Beck, <em>Risk Society</em> (1986)','Giddens, <em>The Constitution of Society</em> (1984)','Lasch, <em>The Culture of Narcissism</em> (1979)','Chakrabarty, <em>Provincializing Europe</em> (2000)'],
+xrn:41},
+XVI:{short:'Globalisation',t:'Globalisation & the Digital Mind',y:'1990–2010',
+c:'27 candidates · Philosophy 7 · Human & social sciences 8 · Natural sciences 6 · Social ideals & reform 6',
+q:'Did globalisation, networks and the new sciences of cooperation and development make the modern mind global, or expose the limits of its universal claims, before the present that Volume XI describes?',
+sec:['<b>Foundations.</b> The post-Cold War settlement and its theorists.','<b>Philosophy: Recognition, Capabilities &amp; Global Justice.</b> Habermas, Rawls’s political liberalism, Fraser and Honneth on recognition, Nussbaum, Pogge, Sen.','<b>Society: Social Capital, Networks &amp; Civilisations.</b> Putnam, Castells, Huntington, Bayly and Osterhammel’s global histories.','<b>The Behavioural &amp; Institutional Turns.</b> Henrich’s fifteen societies, altruistic punishment, the colonial origins of development.','<b>Genomes, Networks &amp; the Anthropocene.</b> The human genome, small-world and scale-free networks, the Anthropocene, planetary boundaries, deep learning.','<b>Social Ideals &amp; Reform: Development, Globalisation &amp; the Commons.</b> From the village (microcredit and randomised trials) to the nation and the world economy (Stiglitz, Harvey), and the new digital commons (Lessig, Benkler).'],
+next:['Appadurai, <em>Modernity at Large</em> (1996)','Sassen, <em>The Global City</em> (1991)','Chakrabarty, ‘The Climate of History’ (2009)','Ostrom, ‘A General Framework for Analyzing Sustainability of Social-Ecological Systems’ (2009)','Sen, <em>Identity and Violence</em> (2006)','Hardt and Negri, <em>Empire</em> (2000)','The Millennium Development Goals and their evaluation'],
+xrn:178}
+};
+
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function strandClass(s){return {Philosophy:'st-phil',Human:'st-hum',Natural:'st-nat',Reform:'st-soc'}[s]||'st-soc'}
+function statusClass(s){return {'Found':'p-ok','Check':'p-chk','Not found':'p-no','In series':'p-in'}[s]||'p-no'}
+
+function renderSurvey(){
+  var tabs=document.getElementById('surveyTabs');
+  var panels=document.getElementById('surveyPanels');
+  var ids=['XII','XIII','XIV','XV','XVI'];
+  var tabsHtml='', panelsHtml='';
+  for(var i=0;i<ids.length;i++){
+    var id=ids[i], v=SURVEY[id], works=WORKS[id];
+    tabsHtml+='<button class="tab'+(i===0?' active':'')+'" data-tab="'+id+'" type="button" role="tab"><span class="tn">'+id+'</span>'+v.short+'</button>';
+    var rows='';
+    for(var j=0;j<works.length;j++){
+      var w=works[j];
+      var st=w[0], yr=w[1], au=w[2], wo=w[3], status=w[4], doi=w[5], note=w[6];
+      var det='';
+      if(doi) det+='<a href="https://doi.org/'+doi+'" target="_blank" rel="noopener">'+doi+'</a>';
+      if(note) det+=(det?' · ':'')+note;
+      if(!det && status==='Not found') det='No matching record in the first pass';
+      rows+='<tr><td><span class="st '+strandClass(st)+'">'+st+'</span></td><td class="num">'+yr+'</td><td>'+esc(au)+'</td><td><cite>'+esc(wo)+'</cite></td><td><span class="pill '+statusClass(status)+'">'+status+'</span></td><td class="det">'+det+'</td></tr>';
+    }
+    var secs='';
+    for(var k=0;k<v.sec.length;k++) secs+='<li>'+v.sec[k]+'</li>';
+    var nexts='';
+    for(var m=0;m<v.next.length;m++) nexts+='<li>'+v.next[m]+'</li>';
+    panelsHtml+='<div class="panel'+(i===0?' active':'')+'" id="panel-'+id+'" role="tabpanel">'+
+      '<div class="head"><span class="num">'+id+'</span><div><h2>'+v.t+'</h2><p class="years">'+v.y+' · '+v.c+'</p></div></div>'+
+      '<p class="q"><b>Organising question.</b> '+v.q+'</p>'+
+      '<h3 class="sh">Proposed sections</h3><ol class="sections">'+secs+'</ol>'+
+      '<h3 class="sh">Candidate works — first-pass Crossref check</h3>'+
+      '<div class="tw"><table><thead><tr><th>Strand</th><th>Year</th><th>Author</th><th>Work</th><th>Status</th><th>Record</th></tr></thead><tbody>'+rows+'</tbody></table></div>'+
+      '<h3 class="sh">To search next</h3><p style="font:400 12.5px/1.5 var(--sans);color:var(--dim);margin-bottom:8px">Not yet checked against Crossref or the register.</p><ul class="search">'+nexts+'</ul>'+
+      '<details class="xr"><summary>Already in the two series on these themes <span>'+v.xrn+' entries, machine-matched, to be screened</span></summary><p>'+v.xrn+' cross-references are listed in the source planning document and will be screened by hand. They are cited by author in the volume proper, not repeated here.</p></details>'+
+      '</div>';
+  }
+  tabs.innerHTML=tabsHtml;
+  panels.innerHTML=panelsHtml;
+
+  var tabEls=tabs.querySelectorAll('.tab');
+  for(var t=0;t<tabEls.length;t++){
+    tabEls[t].addEventListener('click',function(){
+      var target=this.getAttribute('data-tab');
+      var allTabs=tabs.querySelectorAll('.tab');
+      for(var a=0;a<allTabs.length;a++) allTabs[a].classList.remove('active');
+      this.classList.add('active');
+      var allPanels=panels.querySelectorAll('.panel');
+      for(var p=0;p<allPanels.length;p++) allPanels[p].classList.remove('active');
+      document.getElementById('panel-'+target).classList.add('active');
+      var navLinks=document.querySelectorAll('.nav a[data-vol]');
+      for(var n=0;n<navLinks.length;n++) navLinks[n].classList.toggle('active',navLinks[n].getAttribute('data-vol')===target);
+    });
+  }
+  var navLinks=document.querySelectorAll('.nav a[data-vol]');
+  for(var q=0;q<navLinks.length;q++){
+    navLinks[q].addEventListener('click',function(e){
+      e.preventDefault();
+      var target=this.getAttribute('data-vol');
+      var allTabs=tabs.querySelectorAll('.tab');
+      for(var a=0;a<allTabs.length;a++){
+        allTabs[a].classList.toggle('active',allTabs[a].getAttribute('data-tab')===target);
+      }
+      var allPanels=panels.querySelectorAll('.panel');
+      for(var p=0;p<allPanels.length;p++) allPanels[p].classList.remove('active');
+      document.getElementById('panel-'+target).classList.add('active');
+      for(var n=0;n<navLinks.length;n++) navLinks[n].classList.toggle('active',navLinks[n]===this);
+      window.scrollTo({top:document.querySelector('.section').offsetTop-60,behavior:'smooth'});
+    });
+  }
+}
+
+var THEMES=['auto','light','dark'];
+var themeIdx=0;
+try{var saved=localStorage.getItem('mm-theme');if(THEMES.indexOf(saved)>-1)themeIdx=THEMES.indexOf(saved);}catch(e){}
+var ICON_LIGHT='<circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>';
+var ICON_DARK='<path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/>';
+
+function applyTheme(){
+  var m=THEMES[themeIdx];
+  if(m==='auto') document.documentElement.removeAttribute('data-theme');
+  else document.documentElement.setAttribute('data-theme',m);
+  var icon=document.getElementById('themeIcon');
+  icon.innerHTML=(m==='dark')?ICON_DARK:ICON_LIGHT;
+  try{localStorage.setItem('mm-theme',m);}catch(e){}
+}
+
+function toast(msg){
+  var t=document.getElementById('toast');
+  t.textContent=msg; t.classList.add('show');
+  clearTimeout(toast._t);
+  toast._t=setTimeout(function(){t.classList.remove('show')},2200);
+}
+function shareTwitter(){
+  var text="The Modern Mind since 1926 — a centenary survey of John Herman Randall Jr.'s The Making of the Modern Mind. 163 candidate works across five volumes (XII–XVI).";
+  var url=window.location.href;
+  window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(text)+'&url='+encodeURIComponent(url)+'&via=atilabayat','_blank','noopener');
+}
+function fallbackCopy(url){
+  var ta=document.createElement('textarea');
+  ta.value=url; ta.style.position='fixed'; ta.style.opacity='0';
+  document.body.appendChild(ta); ta.select();
+  try{document.execCommand('copy'); toast('Link copied');}catch(e){toast('Copy failed — copy from the address bar');}
+  document.body.removeChild(ta);
+}
+function copyLink(){
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(window.location.href).then(function(){toast('Link copied')},function(){fallbackCopy(window.location.href)});
+  } else {
+    fallbackCopy(window.location.href);
+  }
+}
+
+document.addEventListener('DOMContentLoaded',function(){
+  renderSurvey();
+  document.getElementById('themeBtn').addEventListener('click',function(){
+    themeIdx=(themeIdx+1)%THEMES.length;
+    applyTheme();
+  });
+  applyTheme();
+});
+</script>
+</body>
+</html>
